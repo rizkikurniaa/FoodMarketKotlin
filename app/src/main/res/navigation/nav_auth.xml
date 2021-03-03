@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentSignIn"
     android:id="@+id/nav_auth">
 
+    <fragment android:id="@+id/fragmentSignIn"
+        android:name="com.kikulabs.foodmarketkotlin.ui.auth.signin.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+    </fragment>
+
+    <fragment android:id="@+id/fragmentSignUp"
+        android:name="com.kikulabs.foodmarketkotlin.ui.auth.signup.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+    </fragment>
+
+    <fragment android:id="@+id/fragmentSignUpAddress"
+        android:name="com.kikulabs.foodmarketkotlin.ui.auth.signup.SignUpAddressFragment"
+        tools:layout="@layout/fragment_sign_up_address">
+
+    </fragment>
 </navigation>
