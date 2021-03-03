@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.kikulabs.foodmarketkotlin.MainActivity
 import com.kikulabs.foodmarketkotlin.R
+import com.kikulabs.foodmarketkotlin.ui.auth.AuthActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, AuthActivity::class.java))
         }, 3000)
     }
 }
