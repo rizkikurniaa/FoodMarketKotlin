@@ -27,5 +27,14 @@
         android:name="com.kikulabs.foodmarketkotlin.ui.auth.signup.SignUpAddressFragment"
         tools:layout="@layout/fragment_sign_up_address">
 
+        <action android:id="@+id/action_sign_up_success"
+            app:destination="@id/fragmentSignUpSuccess"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/fragmentSignUpSuccess"
+        android:name="com.kikulabs.foodmarketkotlin.ui.auth.signup.SignUpSuccessFragment"
+        tools:layout="@layout/fragment_sign_up_success">
+
     </fragment>
 </navigation>
