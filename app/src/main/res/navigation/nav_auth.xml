@@ -9,11 +9,17 @@
         android:name="com.kikulabs.foodmarketkotlin.ui.auth.signin.SignInFragment"
         tools:layout="@layout/fragment_sign_in">
 
+        <action android:id="@+id/action_sign_up"
+            app:destination="@id/fragmentSignUp"/>
+
     </fragment>
 
     <fragment android:id="@+id/fragmentSignUp"
         android:name="com.kikulabs.foodmarketkotlin.ui.auth.signup.SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
+
+        <action android:id="@+id/action_sign_up_address"
+            app:destination="@id/fragmentSignUpAddress"/>
 
     </fragment>
 
