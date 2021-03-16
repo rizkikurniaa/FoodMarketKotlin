@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.kikulabs.foodmarketkotlin.R
+import com.kikulabs.foodmarketkotlin.ui.MainActivity
 import com.kikulabs.foodmarketkotlin.ui.auth.AuthActivity
 import kotlinx.android.synthetic.main.fragment_sign_in.*
 
@@ -25,6 +26,12 @@ class SignInFragment : Fragment() {
             val signUp = Intent(activity, AuthActivity::class.java)
             signUp.putExtra("page_request", 2)
             startActivity(signUp)
+        }
+
+        btn_sign_in.setOnClickListener {
+            val home = Intent(activity, MainActivity::class.java)
+            startActivity(home)
+            activity?.finish()
         }
     }
 }
