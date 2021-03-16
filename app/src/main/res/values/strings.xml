@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Food Market Kotlin</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_profile">Profile</string>
 </resources>
