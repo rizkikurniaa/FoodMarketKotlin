@@ -16,6 +16,10 @@
 
     <style name="Theme.FoodMarketKotlin.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" />
 
+    <style name="Theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
     <style name="TextView" />
 
     <style name="TextView.PoppinsNormal32sp020202">
@@ -70,6 +74,14 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">14sp</item>
         <item name="android:background">@drawable/shape_rectangle_8_8d92a3</item>
+    </style>
+
+    <style name="Tab">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">left</item>
     </style>
 
 </resources>
