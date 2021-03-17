@@ -48,6 +48,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:listitem="@layout/item_home_horizontal"
+        tools:itemCount="1"
         android:layout_marginTop="24dp" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
